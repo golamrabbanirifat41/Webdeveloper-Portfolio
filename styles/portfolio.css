@@ -58,9 +58,10 @@ nav a{
 /* header related styles */
 .header{
     background-color:#FFF8F3; ;
-    background-image: url(../images/header_bg.png);
+    background-image: url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: bottom right;
+    
 }
 
 .banner{
@@ -68,12 +69,18 @@ nav a{
     display:flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    
 }
 .banner .profile_pic{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 584px;
     /* height: 676px;
     flex-shrink: 0; */
     padding: 0;
+    
 }
 .banner_greeting{
     font-size: 45px;
@@ -81,6 +88,7 @@ nav a{
     line-height: normal;
     padding-bottom: 5px;
     color: var(--Dark-02, #474747);
+    
 }
 .banner_title{
     font-size: 50px;    
@@ -208,13 +216,14 @@ nav a{
 
 .footer{
     display: flex;
-    height: 780px;
+    height: 500px;
     flex-shrink: 0;
     background-color: #FFF8F3;
     justify-content: space-between;
     padding: 130px 230px;
     margin-top: 130px ;
     gap: 100px;
+    margin-bottom: 0;
 
 }
 .footer_col{
@@ -222,6 +231,7 @@ nav a{
     
 }
 .contact input[type="text"], .contact input[type="email"],textarea{
+    /*so that the submit input type dosesn't change*/
     display: block;
     margin-bottom: 25px;
     padding: 18px 30px;
